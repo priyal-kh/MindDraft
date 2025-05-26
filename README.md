@@ -1,34 +1,53 @@
-MindDraft - Real-time Collaborative Text Editor
-MindDraft is a Google Docs-like real-time collaborative text editor built with React, TypeScript, Quill, Socket.IO, and Node.js. It allows multiple users to edit documents simultaneously with live updates.
+# ⭐ MindDraft — Real-time Collaborative Document Editor
 
-Features
-Real-time collaborative text editing using Socket.IO
+MindDraft is a **Google Docs**-style real-time collaborative text editor. It enables multiple users to create, edit, and collaborate on documents simultaneously with live updates.
 
-Rich text formatting with Quill editor
+---
 
-Persistent document storage with MongoDB
+## 🟢 Features
 
-Autosave every few seconds
+- 📄 **Document Creation & Storage:** Create new documents that are securely saved in the database.  
+- ⚡ **Real-time Editing:** Multiple users can collaborate on the same document at the same time, with instant updates.  
+- 🔄 **Live Synchronization:** Changes from all users are automatically synced across all connected clients for smooth collaboration.  
+- 🎨 **Rich Text Editing:** Powered by the Quill editor, allowing text formatting, image embedding, and more.
 
-Document loading and syncing on join
+---
 
-User-friendly interface with React and TypeScript
+## 🔧 Tech Stack
 
-Environment variables support for backend and frontend URLs
+**Frontend:**  
+- React.js  
+- TypeScript  
+- Quill  
+- shadcn/ui  
 
-Tech Stack
-Frontend: React, TypeScript, Quill, Vite, React Router
+**Backend:**  
+- Node.js  
+- Socket.IO  
 
-Backend: Node.js, Express, Socket.IO, MongoDB, Mongoose
+**Database:**  
+- MongoDB  
 
-Deployment: Render (Backend), Vercel (Frontend)
+**Tools & Others:**  
+- Docker (optional)  
 
-Usage
-Create or open a document by URL with document ID
+---
 
-Edit text collaboratively in real time with others
+## ▶️ Getting Started
 
-Changes autosave automatically
+Follow these instructions to run the project locally.
 
-Contact
-Your Name — khapekarpriyal@gmail.com
+### 🟡 Prerequisites
+
+- Node.js (version >= 18.x)  
+- MongoDB (local or cloud)  
+- npm or yarn  
+
+---
+### ▶️ Preview
+Add demo GIF or video here to showcase the app.
+
+---
+
+### 📬 Contact
+Priyal Khapekar — khapekarpriyal@gmail.com
