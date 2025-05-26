@@ -1,20 +1,20 @@
+/* Editor styles */
 .editorContainer {
   background-color: #F3F3F3;
 }
 
 .editorContainer .ql-editor {
-  /* A4 size */
   width: 21cm;
   min-height: 29.7cm;
   padding: 1in;
   margin: 1rem;
-  box-shadow: 0 0 5px 0 rgba(0,0,0,.5);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
   background-color: white;
   border-radius: 5px;
 }
 
 .editorContainer .ql-container.ql-snow {
-  border:none;
+  border: none;
   display: flex;
   justify-content: center;
 }
@@ -27,16 +27,17 @@
   top: 0;
   z-index: 1;
   background-color: #F3F3F3;
-  border-top:2px solid rgb(203, 199, 199);
-  box-shadow:  0 0 5px 0 rgba(0,0,0,.5);
+  border-top: 2px solid rgb(203, 199, 199);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
 }
 
+/* Print styles */
 @page {
   margin: 1in;
 }
 
 @media print {
-   body {
+  body {
     background: none;
   }
 
@@ -54,18 +55,14 @@
   }
 }
 
+/* Layout */
 .LandingPage {
   background-color: white;
   display: flex;
   flex-direction: column;
 }
 
-.title-1 {
-  font-size: 18px;
-  padding: 4px 0;
-  margin-bottom: 10px;
-}
-
+.title-1,
 .title-2 {
   font-size: 18px;
   padding: 4px 0;
@@ -73,12 +70,12 @@
   margin-left: 5px;
 }
 
+/* Document card */
 .docs {
   border: 1px solid rgb(212, 212, 212);
   background-color: white;
   height: 260px;
   width: 190px;
-  margin: 5px;
   border-radius: 5px;
   text-align: center;
   cursor: pointer;
@@ -86,6 +83,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: border 0.2s ease-in-out;
 }
 
 .docs:hover {
@@ -95,19 +93,7 @@
 .docs > img {
   height: 85%;
   width: 80%;
-  padding: 10px 0 10px 0;
-}
-
-.newdocs {
-  height: 200px;
-  width: 160px;
-  margin-top: 10px;
-}
-
-.newdocs > img {
-  height: 90%;
-  width: 80%;
-  padding: 15px 0 10px 0;
+  padding: 10px 0;
 }
 
 .docs > div {
@@ -117,8 +103,28 @@
   font-size: 18px;
   font-weight: 600;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
+/* New doc card */
+.newdocs {
+  height: 200px;
+  width: 160px;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.newdocs > img {
+  height: 90%;
+  width: 80%;
+  padding: 15px 0 10px 0;
+}
+
+/* Container styling */
 .Docs-container-1 {
   background-color: #F3F3F3;
   padding: 15px 20px 20px 100px;
@@ -128,28 +134,29 @@
   padding: 15px 20px 20px 95px;
 }
 
+/* 🛠️ FLEX ROW FIX for document display */
 .Docs-container-2 > div {
   display: flex;
-  gap: 10px;
-  margin-top: 5px;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 10px;
 }
 
+/* Topbar styling */
 .Topbar {
   display: flex;
-  gap: 330px;
+  justify-content: space-between;
   align-items: center;
-  padding: 3px 0 2px 0;
+  padding: 3px 50px;
 }
 
-.logodiv{
+.logodiv {
   display: flex;
   gap: 10px;
   height: 50px;
   font-size: 25px;
   justify-content: center;
   align-items: center;
-  margin: 5px;
-  margin-left: 50px;
   color: rgb(103, 103, 103);
 }
 
@@ -157,11 +164,13 @@
   height: 75%;
 }
 
+/* Search bar */
 .Searchbar {
   height: 40px;
-  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em,
+              rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
   border-radius: 7px;
-  padding: 0 20px 0 20px;
+  padding: 0 20px;
   display: flex;
   justify-content: center;
   align-items: center;
