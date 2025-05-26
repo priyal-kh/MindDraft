@@ -43,7 +43,7 @@ export const TextEditor = () => {
             return ;
         }
 
-        // @ts-ignore
+        // @ts-expect-error
         const handler = (delta, oldDelta, source) => {
             if (source !== "user") return ;
             socket.emit("send-changes", delta) ;
