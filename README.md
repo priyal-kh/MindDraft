@@ -45,7 +45,10 @@ Follow these instructions to run the project locally.
 
 ---
 ### ▶️ Preview
-Add demo GIF or video here to showcase the app.
+<video width="600" controls>
+  <source src="./assets/demo.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+</video>
 
 ---
 
