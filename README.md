@@ -42,19 +42,7 @@ Follow these instructions to run the project locally.
 - Node.js (version >= 18.x)  
 - MongoDB (local or cloud)  
 - npm or yarn  
-### 💻 Installation
 
-```bash
-git clone https://github.com/yourusername/MindDraft.git
-cd MindDraft/server
-npm install
-npm run dev
-
-# In a new terminal window
-cd ../client
-npm install
-npm run dev
----
 ### ▶️ Preview
 
 
